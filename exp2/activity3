@@ -1,0 +1,11 @@
+# program to give fine on overspeeding
+"""
+Created on Tue Feb 10 12:27:13 20
+Author:Prathmesh
+"""
+speed=int(input("Enter Speed:"))
+
+if (speed>60):
+    print("You are overspeeding you got fine ")
+else: 
+    print("you got no fine")       
