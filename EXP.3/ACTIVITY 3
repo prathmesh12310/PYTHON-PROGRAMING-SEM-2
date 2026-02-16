@@ -1,0 +1,20 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Feb 16 05:07:29 2026
+
+@author: PRATHMESH
+"""
+
+
+P = float(input("Enter Loan Amount: "))
+R = float(input("Enter MONTHLY Interest Rate (%): "))
+years = int(input("Enter Loan Tenure (in years): "))
+
+
+R=R/ 100
+
+N = years * 12
+
+EMI = (P * R * (1 + R) ** N) / ((1 + R) ** N - 1)
+
+print("Monthly EMI is:", round(EMI, 2))
