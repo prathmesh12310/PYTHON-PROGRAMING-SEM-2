@@ -1,0 +1,21 @@
+# -*- coding: utf-8 -*-
+"""
+Spyder Editor
+
+This is a temporary script file.
+"""
+import math
+
+# Take input from user
+P = float(input("Enter loan amount: "))
+annual_rate = float(input("Enter annual interest rate (in %): "))
+years = float(input("Enter loan tenure (in years): "))
+
+# Convert values
+r = annual_rate / (12 * 100)   # monthly interest rate
+n = years * 12                 # total number of months
+
+# EMI calculation
+emi = (P * r * math.pow(1 + r, n)) / (math.pow(1 + r, n) - 1)
+
+print(f"Your monthly EMI is: {emi:.2f}")
