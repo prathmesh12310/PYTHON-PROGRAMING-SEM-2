@@ -1,0 +1,11 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon May  4 11:04:43 2026
+
+@author: prathmesh gore
+"""
+
+import random
+
+otp = random.randint(100000, 999999)
+print(f"Your OTP is: {otp}")
