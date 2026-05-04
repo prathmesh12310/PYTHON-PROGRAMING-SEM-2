@@ -1,0 +1,19 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon May  4 11:02:25 2026
+
+@author: prathmesh gore
+"""
+
+import math
+
+# Input points
+x1 = float(input("Enter x1: "))
+y1 = float(input("Enter y1: "))
+x2 = float(input("Enter x2: "))
+y2 = float(input("Enter y2: "))
+
+# Distance formula
+distance = math.sqrt(math.pow(x2 - x1, 2) + math.pow(y2 - y1, 2))
+
+print(f"Distance between points = {distance}")
